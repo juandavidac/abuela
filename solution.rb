@@ -6,8 +6,8 @@ end
 
 get '/respuesta' do
   if params[:resp]==params[:resp].upcase
-  "Ahh, si manzanas!"
+  erb :upcase
   else
-  "Habla más durito mijo"
+  erb :others
   end
 end
